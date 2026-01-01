@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Artisan HAM Kits</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        // Apply saved theme immediately to prevent flash
+        (function() {
+            const savedTheme = localStorage.getItem('artisan-ham-kits-theme') || 'system';
+            if (savedTheme !== 'system') {
+                document.documentElement.setAttribute('data-theme', savedTheme);
+            }
+        })();
+    </script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ps20.html">PS20 - 20A Linear</a></li>
+            <li><a href="ps40.html">PS40 - 40A SMPS</a></li>
+            <li><a href="about.html" class="active">About Me</a></li>
+        </ul>
+        <button class="theme-toggle" aria-label="Toggle theme">Theme: System</button>
+    </nav>
+
+    <main>
+        <h1>About</h1>
+
+        <p>Hello, I'm Nicolas Herment. Artisan HAM Kits is a side project I run from my office as a one-man operation.</p>
+
+        <h2>My Background</h2>
+        <p>My journey into electronics began with a background in microelectronics, where I developed a deep understanding of electronic components and circuit design. My professional career has been spent as a software engineer, which gives me a unique perspective on both hardware and software aspects of building and documenting projects.</p>
+
+        <h2>How This Started</h2>
+        <p>Artisan HAM Kits came to life from a simple frustration: I was looking for power supply kits I could assemble myself for my amateur radio station. The choice was either buying expensive commercial units or spending countless hours chasing down individual components from existing open designs scattered across various suppliers.</p>
+
+        <p>I wanted something in between: a curated kit with all the right components, ready to build, with good documentation. When I couldn't find it, I decided to create it myself.</p>
+
+        <h2>The Approach</h2>
+        <p>Every kit offered here is built on these principles:</p>
+        <ul>
+            <li><strong>Open Designs:</strong> All designs are open-sourced. It's my intention to make it easy for you to purchase components yourself directly from local distributors if you prefer. The kits are simply a convenience, not a requirement.</li>
+            <li><strong>Quality Selection:</strong> I carefully select components to ensure reliable operation while keeping costs reasonable.</li>
+            <li><strong>Builder-Friendly:</strong> Whether you want a complete disassembled kit for the full building experience, or a partially assembled unit, I offer options to suit your preferences.</li>
+            <li><strong>Clear Documentation:</strong> Drawing on my software engineering background, I provide detailed documentation to guide you through the build process.</li>
+        </ul>
+
+        <h2>The Legal Stuff</h2>
+        <p>Artisan HAM Kits is operated by Arkhaios AB, a Swedish company of which I'm the owner. This is how the kits are formally sold and shipped.</p>
+        <p>Company Registration Number: 5594941608<br>
+        VAT Number: SE559494260801</p>
+
+        <h2>Philosophy</h2>
+        <p>I believe that understanding your equipment makes you a better operator. By building your own power supply, you gain insights into its operation, become better equipped to troubleshoot issues, and get the satisfaction of using equipment you've crafted with your own hands.</p>
+
+        <p>The amateur radio community has always been about experimentation, learning, and sharing knowledge. This project is my contribution to that tradition.</p>
+
+        <h2>Get in Touch</h2>
+        <p>Whether you have questions about the kits, need technical support, or just want to share your build experience, I'd love to hear from you.</p>
+
+        <p>73 de Nicolas Herment</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Artisan HAM Kits | artisan-ham-kits.eu</p>
+    </footer>
+
+    <script src="theme-toggle.js"></script>
+</body>
+</html>
