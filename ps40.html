@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PS40 - 13.8V/40A SMPS | Artisan HAM Kits</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>PSS-V138-40 - 13.8V/40A SMPS | Artisan HAM Kits</title>
+    <link rel="stylesheet" href="/styles.css">
     <script>
         // Apply saved theme immediately to prevent flash
         (function() {
@@ -18,85 +18,74 @@
 <body>
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="ps20.html">PS20 - 20A Linear</a></li>
-            <li><a href="ps40.html" class="active">PS40 - 40A SMPS</a></li>
-            <li><a href="about.html">About Me</a></li>
+            <li><a href="/" >Home</a></li>
+            <li><a href="/ps20.html" >20A Linear</a></li>
+            <li><a href="/ps40.html" class="active">40A SMPS</a></li>
+            <li><a href="/about.html" >About</a></li>
         </ul>
         <button class="theme-toggle" aria-label="Toggle theme">Theme: System</button>
     </nav>
 
     <main>
-        <h1>PS40 - 13.8V/40A Switching Power Supply</h1>
+        <h1>PSS-V138-40 - 13.8V/40A Switching Power Supply</h1>
+<div class="notice">
+    <strong>Development Status:</strong> This kit is currently under development and expected to be available in Q1 2027.
+</div>
+<p>The PSS-V138-40 is a high-efficiency switching power supply designed for modern amateur radio stations requiring substantial current capacity in a compact footprint. Based on the proven design from <a href="https://ludens.cl/Electron/PS40/PS40.html">Ludens.cl</a>, this SMPS delivers impressive performance with intelligent features.</p>
+<h2>Key Specifications</h2>
+<div class="specs">
+    <ul>
+        <li><strong>Output Voltage:</strong> 13.8V (regulated to better than 1%)</li>
+        <li><strong>Continuous Current:</strong> 40A</li>
+        <li><strong>Intermittent Current:</strong> Up to 60A</li>
+        <li><strong>Output Ripple:</strong> Approximately 20mV</li>
+        <li><strong>Efficiency:</strong> 88%</li>
+        <li><strong>Switching Frequency:</strong> 25kHz (half bridge forward converter)</li>
+        <li><strong>Dimensions:</strong> 306 x 150 x 130mm (including projections)</li>
+        <li><strong>Weight:</strong> 2.8kg</li>
+    </ul>
+</div>
+<h2>Advanced Features</h2>
+<h3>Intelligent Cooling System</h3>
+<p>The PSS-V138-40 features a smart cooling fan that operates based on the average current drawn. This ensures efficient cooling when needed while maintaining quiet operation during light loads.</p>
+<h3>RF Noise Minimization</h3>
+<p>Unlike many switching supplies, the PSS-V138-40 produces no detectable RF noise at any frequency higher than the main switching frequency of 50kHz. This is achieved through careful component selection, using bipolar transistors with proportional drive techniques rather than MOSFETs.</p>
+<h3>Visual Voltage Monitoring</h3>
+<p>A tricolor LED provides instant feedback on output voltage status:</p>
+<ul>
+<li><strong>Green:</strong> Normal operation (13.8V nominal)</li>
+<li><strong>Orange:</strong> Low voltage warning</li>
+<li><strong>Red:</strong> High voltage alert</li>
+</ul>
+<h3>Flexible Operation</h3>
+<ul>
+<li>No minimum load requirement</li>
+<li>Current limiting capability</li>
+<li>Compatible with direct 12V battery connection</li>
+<li>Pulse-width modulation control via IC 3524 for stable regulation</li>
+</ul>
+<h2>Compact and Efficient Design</h2>
+<p>The half bridge forward converter topology delivers high power density, making this supply significantly more compact than equivalent linear designs. At 88% efficiency, the PSS-V138-40 generates less waste heat and reduces operating costs.</p>
+<h2>Ideal Applications</h2>
+<ul>
+<li>High-power HF transceivers (100W and above)</li>
+<li>VHF/UHF mobile and base stations</li>
+<li>Contest and DXpedition stations requiring high current</li>
+<li>Multi-radio setups and portable operations</li>
+<li>Installations where space and weight are constrained</li>
+</ul>
+<h2>What's Included</h2>
+<p>The PSS-V138-40 kit includes all necessary components, PCB, transformer, heatsink, cooling fan, and comprehensive assembly documentation. Available in both complete disassembled form or partially assembled configurations to suit your building preferences.</p>
+<div class="notice">
+    <strong>Note:</strong> This kit is based on an open-source design. Full schematics and technical documentation will be provided with your kit.
+</div>
 
-        <div class="notice">
-            <strong>Development Status:</strong> This kit is currently under development and expected to be available in Q2 2026.
-        </div>
-
-        <p>The PS40 is a high-efficiency switching power supply designed for modern amateur radio stations requiring substantial current capacity in a compact footprint. Based on the proven design from <a href="https://ludens.cl/Electron/PS40/PS40.html" target="_blank">Ludens.cl</a>, this SMPS delivers impressive performance with intelligent features.</p>
-
-        <h2>Key Specifications</h2>
-        <div class="specs">
-            <ul>
-                <li><strong>Output Voltage:</strong> 13.8V (regulated to better than 1%)</li>
-                <li><strong>Continuous Current:</strong> 40A</li>
-                <li><strong>Intermittent Current:</strong> Up to 60A</li>
-                <li><strong>Output Ripple:</strong> Approximately 20mV</li>
-                <li><strong>Efficiency:</strong> 88%</li>
-                <li><strong>Switching Frequency:</strong> 25kHz (half bridge forward converter)</li>
-                <li><strong>Dimensions:</strong> 306 x 150 x 130mm (including projections)</li>
-                <li><strong>Weight:</strong> 2.8kg</li>
-            </ul>
-        </div>
-
-        <h2>Advanced Features</h2>
-
-        <h3>Intelligent Cooling System</h3>
-        <p>The PS40 features a smart cooling fan that operates based on the average current drawn. This ensures efficient cooling when needed while maintaining quiet operation during light loads.</p>
-
-        <h3>RF Noise Minimization</h3>
-        <p>Unlike many switching supplies, the PS40 produces no detectable RF noise at any frequency higher than the main switching frequency of 50kHz. This is achieved through careful component selection, using bipolar transistors with proportional drive techniques rather than MOSFETs.</p>
-
-        <h3>Visual Voltage Monitoring</h3>
-        <p>A tricolor LED provides instant feedback on output voltage status:</p>
-        <ul>
-            <li><strong>Green:</strong> Normal operation (13.8V nominal)</li>
-            <li><strong>Orange:</strong> Low voltage warning</li>
-            <li><strong>Red:</strong> High voltage alert</li>
-        </ul>
-
-        <h3>Flexible Operation</h3>
-        <ul>
-            <li>No minimum load requirement</li>
-            <li>Current limiting capability</li>
-            <li>Compatible with direct 12V battery connection</li>
-            <li>Pulse-width modulation control via IC 3524 for stable regulation</li>
-        </ul>
-
-        <h2>Compact and Efficient Design</h2>
-        <p>The half bridge forward converter topology delivers high power density, making this supply significantly more compact than equivalent linear designs. At 88% efficiency, the PS40 generates less waste heat and reduces operating costs.</p>
-
-        <h2>Ideal Applications</h2>
-        <ul>
-            <li>High-power HF transceivers (100W and above)</li>
-            <li>VHF/UHF mobile and base stations</li>
-            <li>Contest and DXpedition stations requiring high current</li>
-            <li>Multi-radio setups and portable operations</li>
-            <li>Installations where space and weight are constrained</li>
-        </ul>
-
-        <h2>What's Included</h2>
-        <p>The PS40 kit includes all necessary components, PCB, transformer, heatsink, cooling fan, and comprehensive assembly documentation. Available in both complete disassembled form or partially assembled configurations to suit your building preferences.</p>
-
-        <div class="notice">
-            <strong>Note:</strong> This kit is based on an open-source design. Full schematics and technical documentation will be provided with your kit.
-        </div>
     </main>
 
     <footer>
         <p>&copy; 2026 Artisan HAM Kits | artisan-ham-kits.eu</p>
     </footer>
 
-    <script src="theme-toggle.js" defer></script>
+    <script src="/theme-toggle.js" defer></script>
 </body>
 </html>

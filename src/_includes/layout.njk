@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script>
+        // Apply saved theme immediately to prevent flash
+        (function() {
+            const savedTheme = localStorage.getItem('artisan-ham-kits-theme') || 'system';
+            if (savedTheme !== 'system') {
+                document.documentElement.setAttribute('data-theme', savedTheme);
+            }
+        })();
+    </script>
+</head>
+<body>
+    <nav>
+        <ul>
+            {%- for item in collections.navigation %}
+            <li><a href="{{ item.url }}" {% if activeNav == item.data.activeNav %}class="active"{% endif %}>{{ item.data.navTitle }}</a></li>
+            {%- endfor %}
+        </ul>
+        <button class="theme-toggle" aria-label="Toggle theme">Theme: System</button>
+    </nav>
+
+    <main>
+        {{ content | safe }}
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Artisan HAM Kits | artisan-ham-kits.eu</p>
+    </footer>
+
+    <script src="/theme-toggle.js" defer></script>
+</body>
+</html>

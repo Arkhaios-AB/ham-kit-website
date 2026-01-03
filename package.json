@@ -1,0 +1,27 @@
+{
+  "name": "ham-kit-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "theme-toggle.js",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve",
+    "clean": "rm -rf _site",
+    "prepare": "husky"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arkhaios-AB/ham-kit-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Arkhaios-AB/ham-kit-website/issues"
+  },
+  "homepage": "https://github.com/Arkhaios-AB/ham-kit-website#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "husky": "^9.1.7"
+  }
+}
