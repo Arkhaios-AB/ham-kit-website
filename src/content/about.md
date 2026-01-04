@@ -3,7 +3,7 @@ layout: layout.njk
 title: "About | Artisan HAM Kits"
 activeNav: "about"
 navTitle: "About"
-navOrder: 4
+navOrder: 5
 permalink: "/about.html"
 ---
 
