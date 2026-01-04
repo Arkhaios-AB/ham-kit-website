@@ -63,6 +63,8 @@ For a typical amateur radio setup:
 - **50Ah system:** 215-310 EUR
 - **100Ah system:** 235-330 EUR
 
+EVE C40 40135 is also an option and potentially easier to embed in an enclosure
+
 ## Potential Benefits
 
 - Zero noise capability when the charge circuit is disabled
