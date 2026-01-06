@@ -17,7 +17,12 @@
 </head>
 <body>
     <nav>
-        <ul>
+        <button class="burger-menu" aria-label="Toggle menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-menu">
             {%- for item in collections.navigation %}
             <li><a href="{{ item.url }}" {% if activeNav == item.data.activeNav %}class="active"{% endif %}>{{ item.data.navTitle }}</a></li>
             {%- endfor %}
@@ -35,6 +40,7 @@
         </footer>
     </div>
 
+    <script src="/burger-menu.js" defer></script>
     <script src="/theme-toggle.js" defer></script>
 </body>
 </html>

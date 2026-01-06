@@ -5,6 +5,7 @@ module.exports = function(eleventyConfig) {
   // Copy static assets to root
   eleventyConfig.addPassthroughCopy({ "src/css/styles.css": "styles.css" });
   eleventyConfig.addPassthroughCopy({ "src/js/theme-toggle.js": "theme-toggle.js" });
+  eleventyConfig.addPassthroughCopy({ "src/js/burger-menu.js": "burger-menu.js" });
   eleventyConfig.addPassthroughCopy({ "src/CNAME": "CNAME" });
 
   // Create navigation collection
