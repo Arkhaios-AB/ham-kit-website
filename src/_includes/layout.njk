@@ -25,13 +25,15 @@
         <button class="theme-toggle" aria-label="Toggle theme">Theme: System</button>
     </nav>
 
-    <main>
-        {{ content | safe }}
-    </main>
+    <div class="content-wrapper">
+        <main>
+            {{ content | safe }}
+        </main>
 
-    <footer>
-        <p>&copy; 2026 Artisan HAM Kits | artisan-ham-kits.eu</p>
-    </footer>
+        <footer>
+            <p>&copy; 2026 Artisan HAM Kits | artisan-ham-kits.eu</p>
+        </footer>
+    </div>
 
     <script src="/theme-toggle.js" defer></script>
 </body>

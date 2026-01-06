@@ -13,6 +13,7 @@
     --link-color: #4a4a4a;
     --border-color: #d0d0d0;
     --heading-color: #1a1a1a;
+    --active-link-color: #00AA00;
 }
 
 /* Auto dark theme based on system preference */
@@ -25,6 +26,7 @@
         --link-color: #b0b0b0;
         --border-color: #404040;
         --heading-color: #e0e0e0;
+        --active-link-color: #22BB22;
     }
 }
 
@@ -37,6 +39,7 @@
     --link-color: #b0b0b0;
     --border-color: #404040;
     --heading-color: #e0e0e0;
+    --active-link-color: #22BB22;
 }
 
 /* Manual light theme override */
@@ -48,6 +51,13 @@
     --link-color: #4a4a4a;
     --border-color: #d0d0d0;
     --heading-color: #1a1a1a;
+    --active-link-color: #00AA00;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
 }
 
 body {
@@ -55,20 +65,45 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
     line-height: 1.6;
-    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Navigation */
 nav {
     background-color: var(--nav-bg);
-    padding: 1rem 2rem;
+    padding: 0.5rem 1rem;
     border-bottom: 1px solid var(--border-color);
-    position: sticky;
-    top: 0;
     z-index: 100;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-shrink: 0;
+}
+
+/* Scrollable content wrapper */
+.content-wrapper {
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main content */
+main {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    flex: 1;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.9rem;
 }
 
 nav ul {
@@ -83,7 +118,7 @@ nav a {
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.2s;
-    padding: 0.5rem 1rem;
+    padding: 0.25rem 0.5rem;
     display: block;
 }
 
@@ -92,6 +127,7 @@ nav a:hover {
 }
 
 nav a.active {
+    color: var(--active-link-color);
     text-decoration: underline;
 }
 
@@ -100,7 +136,7 @@ nav a.active {
     background-color: var(--nav-hover);
     border: 1px solid var(--border-color);
     color: var(--text-color);
-    padding: 0.5rem 1rem;
+    padding: 0.25rem 0.5rem;
     font-family: 'Courier New', Courier, monospace;
     font-size: 0.9rem;
     cursor: pointer;
@@ -115,13 +151,6 @@ nav a.active {
 .theme-toggle:focus {
     outline: 2px solid var(--link-color);
     outline-offset: 2px;
-}
-
-/* Main content */
-main {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 2rem;
 }
 
 h1 {
@@ -265,15 +294,6 @@ tr:hover {
     padding: 1rem;
     margin: 2rem 0;
     font-style: italic;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 2rem;
-    margin-top: 4rem;
-    border-top: 1px solid var(--border-color);
-    font-size: 0.9rem;
 }
 
 /* Responsive design */
