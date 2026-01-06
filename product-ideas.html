@@ -28,9 +28,15 @@
     </nav>
 
     <main>
-        <h1>Product Ideas</h1>
+        <h1 id="product-ideas" tabindex="-1">Product Ideas</h1>
 <p>These are concepts I'm currently researching and evaluating. If you're interested in any of these projects or have feedback, I'd love to hear from you.</p>
-<h1>Hybrid LFP battery power supply</h1>
+<h2 id="table-of-contents" tabindex="-1">Table of Contents</h2>
+<ul>
+<li><a href="#a-hybrid-lfp-battery-power-supply">A. Hybrid LFP Battery Power Supply</a></li>
+<li><a href="#b-regenerative-dc-electronic-load">B. Regenerative DC Electronic Load</a></li>
+</ul>
+<hr>
+<h1 id="a-hybrid-lfp-battery-power-supply" tabindex="-1">A. Hybrid LFP Battery Power Supply</h1>
 <p>A power supply that combines a low-power switching or linear supply with an LFP (Lithium Iron Phosphate) battery for handling high-power transmission peaks. The key insight: most amateur radio operation involves more listening than transmitting.</p>
 <p>During receive periods (low power draw), the supply charges the LFP battery at a modest rate. When transmitting (high power demand), the battery supplements the supply to deliver the required current. This allows for:</p>
 <ul>
@@ -39,7 +45,7 @@
 <li>Natural load leveling over the duty cycle</li>
 <li>Low noise operation</li>
 </ul>
-<h2>Design Challenges</h2>
+<h2 id="design-challenges" tabindex="-1">Design Challenges</h2>
 <p>The viability depends on calculating:</p>
 <ul>
 <li><strong>Expected duty cycle</strong>: Typical listen/transmit ratio for various operating modes (SSB, CW, digital modes, etc.)</li>
@@ -48,7 +54,7 @@
 <li><strong>Charge efficiency</strong>: LFP cells are efficient but not 100% - losses need to be factored in</li>
 <li><strong>Overall running cost</strong>: LFP batteres are not cheap and the charge/discharge efficiency is 95%.</li>
 </ul>
-<h2>Example Configuration</h2>
+<h2 id="example-configuration" tabindex="-1">Example Configuration</h2>
 <p>For a typical amateur radio setup:</p>
 <ul>
 <li><strong>Transmit current:</strong> 20.5A</li>
@@ -68,7 +74,7 @@
 <li>~8 hours of transceiver off to return to 100% charge at 5A</li>
 <li>~13 hours of transceiver in RX only to return to 100% charge with 2A of RX consumption</li>
 </ul>
-<h2>Costs</h2>
+<h2 id="costs" tabindex="-1">Costs</h2>
 <table>
 <thead>
 <tr>
@@ -124,7 +130,7 @@
 <li><strong>100Ah system:</strong> 235-330 EUR</li>
 </ul>
 <p>EVE C40 40135 is also an option and potentially easier to embed in an enclosure</p>
-<h2>Potential Benefits</h2>
+<h2 id="potential-benefits" tabindex="-1">Potential Benefits</h2>
 <ul>
 <li>Zero noise capability when the charge circuit is disabled</li>
 <li>Reduced power consumption during standby/receive</li>
@@ -132,17 +138,17 @@
 <li>Battery can provide backup power during brief mains interruptions</li>
 <li>Could be more cost-effective than a full 40A+ power supply (??)</li>
 </ul>
-<h2>Open Questions</h2>
+<h2 id="open-questions" tabindex="-1">Open Questions</h2>
 <ul>
 <li>Linear or SMPS for the charging supply?</li>
 <li>Battery management and balancing requirements?</li>
 <li>Integration with existing transceivers?</li>
 </ul>
 <hr>
-<h1>Regenerative DC Electronic Load</h1>
+<h1 id="b-regenerative-dc-electronic-load" tabindex="-1">B. Regenerative DC Electronic Load</h1>
 <p>Testing power supplies requires dummy loads that convert electrical energy into heat. For high-power testing (20-40A at 13.8V = 275-550W), this becomes wasteful and requires substantial cooling. A typical session could waste several kWh.</p>
 <p>A regenerative DC electronic load that converts the DC test current back to AC and feeds it into the mains grid, recovering 95%+ of the energy that would otherwise be wasted as heat.</p>
-<h2>Key Features</h2>
+<h2 id="key-features" tabindex="-1">Key Features</h2>
 <p><strong>Energy Recovery:</strong></p>
 <ul>
 <li>Active rectification/inversion to feed energy back to grid</li>
@@ -165,7 +171,7 @@
 <li>Real-time power and energy measurements</li>
 <li>Data logging capabilities</li>
 </ul>
-<h2>Use Cases</h2>
+<h2 id="use-cases" tabindex="-1">Use Cases</h2>
 <ul>
 <li>Power supply development and testing</li>
 <li>Quality control and burn-in testing</li>

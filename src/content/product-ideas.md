@@ -11,7 +11,14 @@ permalink: "/product-ideas.html"
 
 These are concepts I'm currently researching and evaluating. If you're interested in any of these projects or have feedback, I'd love to hear from you.
 
-# Hybrid LFP battery power supply
+## Table of Contents
+
+- [A. Hybrid LFP Battery Power Supply](#a-hybrid-lfp-battery-power-supply)
+- [B. Regenerative DC Electronic Load](#b-regenerative-dc-electronic-load)
+
+---
+
+# A. Hybrid LFP Battery Power Supply
 
 A power supply that combines a low-power switching or linear supply with an LFP (Lithium Iron Phosphate) battery for handling high-power transmission peaks. The key insight: most amateur radio operation involves more listening than transmitting.
 
@@ -81,7 +88,7 @@ EVE C40 40135 is also an option and potentially easier to embed in an enclosure
 
 ---
 
-# Regenerative DC Electronic Load
+# B. Regenerative DC Electronic Load
 
 Testing power supplies requires dummy loads that convert electrical energy into heat. For high-power testing (20-40A at 13.8V = 275-550W), this becomes wasteful and requires substantial cooling. A typical session could waste several kWh.
 
